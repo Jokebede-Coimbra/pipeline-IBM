@@ -3,7 +3,7 @@ stages:
 - test
 
 build:
-job:
+  stage: build
   script:
   - echo "Olá alunos"
   - echo "da turma 2 IBM"
