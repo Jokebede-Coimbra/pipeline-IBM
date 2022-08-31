@@ -1,4 +1,4 @@
 job:
   script:
-  - echo "Oi alunos"
+  - echo "Olá alunos"
   - echo "da turma 2 IBM"
