@@ -1,10 +1,16 @@
+stages:
+- build
+- test
+
+build:
 job:
   script:
   - echo "Olá alunos"
   - echo "da turma 2 IBM"
 
-build:
+test:
+  stage: test
   script:
-  - echo "Oi alunos"
+  - echo "Olá alunos"
   - echo "da turma 2 IBM"
 
