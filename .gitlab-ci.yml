@@ -2,3 +2,9 @@ job:
   script:
   - echo "Olá alunos"
   - echo "da turma 2 IBM"
+
+build:
+  script:
+  - echo "Oi alunos"
+  - echo "da turma 2 IBM"
+
