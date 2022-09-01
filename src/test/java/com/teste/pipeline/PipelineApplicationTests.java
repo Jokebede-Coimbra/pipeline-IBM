@@ -17,7 +17,7 @@ class PipelineApplicationTests {
 	@Test
 	void cpfInvalido() {
 		var invalido = ValidadorCpf.validarCpf("88888888888");
-		assertEquals(true, invalido);
+		assertEquals(false, invalido);
 	}
 
 }
