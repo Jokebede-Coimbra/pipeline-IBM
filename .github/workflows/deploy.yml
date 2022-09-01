@@ -1,18 +1,18 @@
 name: CI_IBM
 
-on: [push]
+on: [push] 
 
 jobs:
   build:
-  runs-on:
+  runs-on: 
 
   steps:
-  - name: Roda um script shell
-  run: echo "Olá git actions"
+  - name: Validando o pacote Java
+  run: mvn package -Dmaven.test.skip
 
   test:
   runs-on: ubuntu-20.04
-  needs: build
+  needs: build 
   steps:
-  - name: Roda um script shell
-  run: echo "Olá git actions rodando teste"
+  - name: Roda o teste de unidade
+  run: mvn test
